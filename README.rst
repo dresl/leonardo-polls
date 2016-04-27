@@ -13,7 +13,7 @@ Installation
 
 .. code-block:: bash
 
-    pip install leonardo-polls
+    pip install -e git+https://github.com/dresl/leonardo-polls@#egg=leonardo_polls
 
 Read More
 =========
