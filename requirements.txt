@@ -1,1 +1,1 @@
--r requirements/default.txt
+django-polls==0.2.1
