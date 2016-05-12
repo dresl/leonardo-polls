@@ -5,7 +5,9 @@ from django.utils.translation import ugettext_lazy as _
 from leonardo.module.web.models import Page, Widget
 from polls.models import Poll
 
-class PollsWidget(Poll):
+class PollsWidget(Widet):
+
+    poll = models.ForeignKey('polls.Poll', verbose_name='Poll')
 
     class Meta:
         abstract = True
