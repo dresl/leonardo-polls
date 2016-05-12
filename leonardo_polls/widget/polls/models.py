@@ -9,8 +9,7 @@ class PollsWidget(Widget):
 
 	poll = models.ForeignKey('Poll', verbose_name='Poll')
 
-    class Meta:
+	class Meta:
         abstract = True
         verbose_name = _('Poll')
         verbose_name_plural = _('Polls')
-        
