@@ -13,3 +13,4 @@ class PollsWidget(Widget):
         abstract = True
         verbose_name = _('Poll')
         verbose_name_plural = _('Polls')
+        
