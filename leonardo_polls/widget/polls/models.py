@@ -3,10 +3,9 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from leonardo.module.web.models import Page, Widget
+from polls.models import Poll
 
-class PollsWidget(Widget):
-
-    title = models.CharField(max_length=255, default="What's up?")
+class PollsWidget(Poll):
 
     class Meta:
         abstract = True

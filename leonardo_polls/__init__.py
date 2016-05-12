@@ -4,6 +4,12 @@ from django.utils.translation import ugettext_lazy as _
 
 default_app_config = 'leonardo_polls.Config'
 
+LEONARDO_APPS = [
+    'polls',
+]
+
+LEONARDO_PUBLIC = True
+
 class Default(object):
 
     optgroup = 'Polls'
