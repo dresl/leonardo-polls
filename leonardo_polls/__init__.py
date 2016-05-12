@@ -22,6 +22,12 @@ class Default(object):
         'leonardo_polls.widget.polls.models.PollsWidget'
     ]
 
+    @property
+    def plugins(self):
+        return [
+            ('polls.urls', 'Polls'),
+        ]
+
 
 class Config(AppConfig):
     name = 'leonardo_polls'
