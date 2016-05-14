@@ -1,5 +1,6 @@
 {% extends widget.get_base_template %}
+{% load leonardo_tags %}
 
 {% block content %}
-<h3>{{ widget.title }}</h3>
+<a href="{% app_reverse "detail" "polls.urls" pk=widget.poll.id %}">{{ widget.poll.question }} {{ widget.poll.result }}</a> {% if widget.poll.description %}({{ widget.poll.description }}){% endif %}
 {% endblock %}
